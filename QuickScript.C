@@ -6,8 +6,10 @@
   //TH2F *h2 = new TH2F("h2","GadeFit",5,-2.5,2.5,5,-50,50);
   
   TCanvas *C1 = new TCanvas("C1");
-  //  C1->Divide(1,2);
+  C1->Divide(2);
   C1->cd(1);
+  IMME_graph1->Draw();
+  C1->cd(2);
   h1->Draw();
   IMME_Resid_graph1->Draw("P");
   zer->Draw();
